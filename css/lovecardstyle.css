@@ -1,0 +1,97 @@
+body{
+    height: 100vh; /* give full height of the screen*/
+    display: flex; /* to give flex box layout */
+    justify-content: center; /* defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container*/
+    align-items: center; /* The flexbox items are aligned at the center of the cross axis.*/
+    font-family: "Raleway",Arial,  sans-serif; /* font type */
+    background: #8f898f;/* background color */
+    background-image: ;
+}
+head{
+    display: none;
+}
+div{
+    display: block; /* starts on a new line and takes up the available screen width. */
+}
+.card{
+    position: relative; /*changes the position of the HTML element relative to where it normally appears. */
+    /* overflow: hidden; */
+    width: 300px;
+    height: 200px;
+    border-radius: 10px; /* to get the cur od the division */
+     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); /*to make the division visible the border color and all. rgba gives the shadow color */
+     transition: 0.3s; /* specifies a transition effect with a slow start, then fast, then end slowly */
+    padding: 30px 50px; /* to define the space around the element's content */
+    background: #ffff;/* backgrnd color of the division */
+    cursor: pointer;  /* cursor of hand */
+       margin-right: 30px; /* divsion position from right which has to be left */
+       transition: width 0.3s ease-in-out; 
+}
+.imgbox{
+    position: relative;
+    padding: 3px;
+    width: 0px;
+     height: a0px;
+     /* overflow: hidden; */
+      transform: translateY(-80px);/* how much  position outside the  div */
+     z-index: 50; 
+}
+
+img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;         /* background-color: green; */
+    object-fit:fill; 
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);  
+    transition: transform 0.3s ease-in-out;
+  
+}
+
+
+.content{
+position: absolute;
+    top: 100%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+.card:hover {
+    width: 300px; /* Set the expanded width on hover */
+    
+}
+.card:hover .imgbox img {
+    transform: scale(1.1);
+}
+
+.card:hover .content {
+    opacity: 1;
+}
+/* .imgbox:hover img {
+    transform: scale(1.1);
+}
+.imgbox:hover .content {
+    opacity: 1;
+    top: 50%;
+} */
+.content h2{
+    color: #b65d0a;
+}
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: opx;
+}
+

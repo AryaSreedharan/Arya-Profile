@@ -1,0 +1,10 @@
+.right-align{
+    text-align: right;
+    object-fit: fill;
+    background: #cbf1a7;
+    float: right;
+}
+.center-align{
+    text-align: center;
+    
+}
