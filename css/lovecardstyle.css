@@ -5,7 +5,7 @@ body{
     align-items: center; /* The flexbox items are aligned at the center of the cross axis.*/
     font-family: "Raleway",Arial,  sans-serif; /* font type */
     background: #8f898f;/* background color */
-    background-image: ;
+    /* background-image: ; */
 }
 head{
     display: none;
