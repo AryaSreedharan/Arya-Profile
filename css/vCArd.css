@@ -1,0 +1,82 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;/* n an element's total width and height*/
+    color      : #334e64;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    min-height     : 100vh;
+    width          : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    background-image: url('../certificates/vCard/download3.jpeg'); 
+    background-size: cover; /* background     : linear-gradient(to bottom, #e4ddd7c5, #e06e03); */
+}
+.container{
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.coding{
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(#fef7f7, #22a2f8);
+    border-radius: 12px;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+}
+.coding:hover {
+    z-index: 1111;
+    transform: perspective(2000px) rotate(-10deg);
+  
+    box-shadow: 5px 5px 20px rgb(57, 135, 180);
+  }
+  .coding .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #093246; */
+    border-radius: 12px;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+  }
+  .coding .img-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .coding:hover .img-container {
+    transform: rotateY(-135deg);
+  }
+  .coding .Details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #000;
+  }
+  
+  .coding .Details h2 {
+    margin: 0;
+    padding: 0.5em 0;
+   
+    background: linear-gradient(to right, #c71717, #c99b06, #912c05, #db370e);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: untold 3s infinite ease-in-out;
+  }
+  
